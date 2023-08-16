@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman Numeral Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-white flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-5xl mx-4">
+      <header class="text-center py-8">
+        <h1 class="text-slate-900 text-7xl font-extrabold p-1">
+          Roman Numeral Converter
+        </h1>
+        <p class="mt-6 text-3xl text-slate-600 text-center max-w-6xl mx-auto">
+          Your easy solution for converting Arabic numbers into
+          <span class="text-sky-500 font-semibold dark:text-sky-400"
+            >Roman numerals</span
+          >.<br />Just type in your number and instantly get the Roman numeral
+          equivalent.<br />Effortless and accurate conversions at your
+          fingertips!
+        </p>
+      </header>
+
+      <main class="text-center">
+        <div class="mb-6 mt-6">
+          <input
+            type="text"
+            id="user-input"
+            class="w-72 mx-auto text-center p-2.5 text-4xl rounded-lg bg-white focus:ring-blue-500 !important focus:border-blue-500 !important border-gray-300 text-gray-900"
+            placeholder="Enter a number"
+            autofocus
+            required
+          />
+        </div>
+        <div class="mb-6 mt-6" id="conversion">
+          <button
+            id="convert-button"
+            type="button"
+            class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/75 hover:ring-slate-900/15"
+          >
+            Convert
+          </button>
+        </div>
+        <div class="mb-6 mt-6 text-black text-3xl font-bold" id="result"></div>
+        <div class="mb-0 mt-0 text-red-500 text-2xl" id="error"></div>
+      </main>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>
